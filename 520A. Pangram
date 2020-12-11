@@ -1,0 +1,20 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+  
+        int n=scan.nextInt();
+        String a=scan.next();
+        a=a.toLowerCase();
+        if( ( a.contains("a") && a.contains("b")  && a.contains("c") && a.contains("d") && a.contains("e") && a.contains("f") && a.contains("g") && a.contains("h")
+                && a.contains("i") && a.contains("j") && a.contains("k") && a.contains("l") && a.contains("m") && a.contains("n") && a.contains("o")
+                && a.contains("p") && a.contains("q")&& a.contains("r")&& a.contains("s")&& a.contains("t")
+                && a.contains("u") && a.contains("v")&& a.contains("w")&& a.contains("x") && a.contains("y")&& a.contains("z")) ==true ){
+            System.out.println("YES");
+        }  
+        else System.out.println("NO");
+        
+    }}
