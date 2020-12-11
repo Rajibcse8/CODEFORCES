@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class MyPractice {
+       
+    public static Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
+   
+       String S1 = scan.next();
+       String  S2 = scan.next();
+       String s1 = S1.toLowerCase();
+       String s2 = S2.toLowerCase();
+       System.out.println(s1.compareTo(s2) ==0?"0": s1.compareTo(s2) > 0?"1":"-1"); 
+}}
