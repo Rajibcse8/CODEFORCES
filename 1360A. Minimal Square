@@ -1,0 +1,22 @@
+import static java.lang.Integer.min;
+import static java.lang.Integer.max;
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+   
+    public static void main(String[] args) {
+     
+        int t=scan.nextInt();
+        while(t-->0){
+          int mx=scan.nextInt();
+          int mn=scan.nextInt();
+         int a =max(mx,mn);
+         int b=min(mx,mn);
+           b=b*2;
+           
+            System.out.println(b>=a? b*b: a*a);
+      
+    } 
+    }}
