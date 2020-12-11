@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+   
+    public static void main(String[] args) {
+        int n =scan.nextInt();
+        System.out.println(n%2==0?"Mahmoud":"Ehab");
+}}
