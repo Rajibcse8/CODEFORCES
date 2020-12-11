@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.util.Set;
+
+public class Codeforces {
+    
+    public static int dig(int n){
+      int sum=0;
+      while(n!=0){
+        sum+=n%10;
+        n/=10;
+      }
+      return sum;
+    }
+
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+       
+       int n=scan.nextInt();
+        int i;
+       boolean flag=false;
+       for( i=18;flag!=true;i++){
+       
+           int sum =dig(i);
+           if(sum==10)n--;
+           if(n==0)flag=true;
+       }
+        System.out.println(i-1);
+    }}
