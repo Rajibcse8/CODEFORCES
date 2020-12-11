@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class MyPractice {
+
+    public static Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
+ 
+       int n=scan.nextInt();
+      boolean flag=true;
+      for(int i=0;i<n;i++){
+         
+          int da=scan.nextInt();
+          if(da==1)flag=false;     
+      }
+        System.out.println(flag==true? "EASY":"HARD");
+    }}
