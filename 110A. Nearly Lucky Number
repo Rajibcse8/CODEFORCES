@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class MyPractice {
+    
+    public static Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
+ 
+       String s1=scan.next();
+       int lu=0;
+       
+       for(int i=0;i<s1.length();i++  ){
+           if(s1.charAt(i)=='4' || s1.charAt(i)=='7' )lu++;
+       }
+        System.out.println(lu==7 || lu==4? "YES":"NO");   
+    
+    }}
+
+ 
