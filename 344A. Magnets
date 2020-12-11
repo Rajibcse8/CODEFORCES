@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class MyPractice {
+       
+    public static Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
+ 
+        int n=scan.nextInt();
+        int coun=1;
+        int len=0;
+        String piv="";
+        for (int i=1; i<=n;i++) {
+            String ans=scan.next();
+            if(i==1){
+             piv=ans;
+             len=1;
+             continue;
+            }
+            if(ans.compareTo(piv)==0)continue;
+           
+            if(ans.compareTo(piv)!=0){
+             len++;
+             piv=ans;
+             continue;
+            }
+        }
+        System.out.println(len);
+        
+}}
