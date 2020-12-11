@@ -1,0 +1,31 @@
+import static java.lang.Math.max;
+import java.util.Scanner;
+
+public class MyPractice {
+       
+    public static Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
+   
+        
+      int n=scan.nextInt();
+      int ex,en;
+      int cap=0;
+      int rem=0;
+      for(int i=0;i<n;i++){
+                  ex=scan.nextInt();
+                  en=scan.nextInt();
+                  
+            if(i==0){
+               cap=max(ex,en);
+               rem=en-ex;
+               continue;
+            }
+            
+            
+            rem=rem-ex+en;
+            cap=(rem>cap?rem:cap);
+            continue;
+      }
+        System.out.println(cap);
+}}
+ 
