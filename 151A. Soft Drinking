@@ -1,0 +1,27 @@
+import static java.lang.Integer.min;
+import java.util.Scanner;
+
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+        
+      int n=scan.nextInt();
+      int k=scan.nextInt();
+      int l=scan.nextInt();
+      int c=scan.nextInt();
+      int d=scan.nextInt();
+      int p=scan.nextInt();
+      int nl=scan.nextInt();
+      int np=scan.nextInt();
+        
+      int toast_dr=(k*l)/nl;
+      int toast_li=(c*d);
+      int toast_so=(p/np);
+      
+      int mini=min(toast_dr,toast_li);
+      mini=min(mini,toast_so);
+      
+        System.out.println(mini/n);
+   }}
+ 
