@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+       
+        int t=scan.nextInt();
+        while(t-->0){
+              
+            long a=scan.nextLong();
+            long b=scan.nextLong();
+            long c=scan.nextLong();
+            
+            System.out.println((long) ((a+b+c)/2) );
+        
+        }
+    }}
+ 
+   
