@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+       
+       int n=scan.nextInt();
+       String ans="";
+        
+       for(int i=1;i<=n;i++){
+         ans+= String.valueOf(i);
+       
+           } 
+       
+        System.out.println(ans.charAt(n-1));
+    }}
