@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Problem652A {
+    static public Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
+          
+          int t=scan.nextInt();
+          while(t--!=0){
+             
+           int n=scan.nextInt();
+            if(n>=4){
+                boolean flag=false;
+               for(int i=4;i<=n;i=i*4){
+                   if(n%i==0)
+                   {
+                       flag=true;
+                       break;
+                   }
+                   else continue;
+               }
+                System.out.println(flag==true? "YES":"NO");
+            }
+            else System.out.println("NO");
+            
+          }
+    }
+}
