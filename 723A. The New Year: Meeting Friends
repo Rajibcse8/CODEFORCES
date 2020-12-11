@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+     
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        int c=scan.nextInt();
+        
+        int   mx=Integer.max(a, b);
+        mx=Integer.max(mx, c);
+        int min=Integer.min(a, b);
+        min=Integer.min(min, c);
+        System.out.println(mx-min);
+      
+    }}
