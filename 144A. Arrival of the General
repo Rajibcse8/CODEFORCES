@@ -1,0 +1,45 @@
+/*
+..................
+******************
+*................*
+*.....RAJIB......* 
+*................* 
+******************
+..................
+*/
+
+
+
+import java.util.Set;
+import java.util.HashSet;
+import java.util.ArrayList;
+import static java.lang.Integer.min;
+import static java.lang.Integer.max;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Codeforces {
+ 
+   
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+      
+      int n=scan.nextInt();
+      int mini=1000,maxi=-10;
+      int mx_in=0,mn_in=0;
+      for(int i=0;i<n;i++)
+      {
+            int data=scan.nextInt();
+            if(data>maxi){maxi=data;  mx_in=i;}
+            if(data==mini  || data <mini){mini=data; mn_in=i;}
+      
+      }
+        mx_in++;
+        mn_in++;
+        System.out.println(maxi==mini? 0:  mn_in>mx_in?  (mx_in-1)+(n-mn_in): (mx_in-1)+(n-mn_in)-1   );
+      
+    }}
