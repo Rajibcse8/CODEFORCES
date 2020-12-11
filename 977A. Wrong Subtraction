@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class MyPractice {
+       
+    public static Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
+   
+    
+    String s=scan.next();
+    int n=scan.nextInt();
+    
+    StringBuffer ans=new StringBuffer(s);
+    ans.reverse();
+        for (int i = 1; i <= n; i++) {
+         if(ans.charAt(0)>='1' && ans.charAt(0)<='9'){
+             int an=Integer.parseInt(String.valueOf(ans.charAt(0)));
+             an--;
+            ans.deleteCharAt(0);
+            ans.insert(0, an);
+            continue;
+         }       
+         if(ans.charAt(0)=='0'){
+            ans.deleteCharAt(0);
+         }
+        }
+        System.out.println(ans.reverse().toString());
+}}
+ 
