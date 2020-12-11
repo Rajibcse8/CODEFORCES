@@ -1,0 +1,14 @@
+import static java.lang.Integer.min;
+import java.util.Scanner;
+
+public class MyPractice {
+
+    public static Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
+ 
+       int a=scan.nextInt();
+       int b=scan.nextInt();
+       
+        System.out.println(min(a,b)+" " + ( (a+b)-( min(a,b)*2) )/2);       
+    }}
+ 
