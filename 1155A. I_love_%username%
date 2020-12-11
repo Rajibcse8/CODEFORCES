@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+       
+        int n=scan.nextInt();
+        int co=0,bmin=0,bmax=0;
+        for(int i=0;i<n;i++){
+        
+            int data =scan.nextInt();
+            if(i==0){ bmin=data;bmax=data;continue;}
+            if(data>bmax){co++;bmax=data;continue;}
+            if(data<bmin){co++;bmin=data;continue;}
+            else continue;       
+        }
+        System.out.println(co);
+    }}
