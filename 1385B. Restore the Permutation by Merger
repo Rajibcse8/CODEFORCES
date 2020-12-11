@@ -1,0 +1,48 @@
+import java.util.Set;
+import java.util.HashSet;
+import java.util.ArrayList;
+import static java.lang.Integer.min;
+import static java.lang.Integer.max;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+       
+     
+        
+        
+        int t=scan.nextInt();
+        
+        while(t-->0){
+       
+        int n=scan.nextInt();
+        
+        Set<Integer>mys= new HashSet();
+        int sze=0;
+        for(int i=0;i<2*n;i++){
+            
+            int data=scan.nextInt();
+            mys.add(data);
+            
+           if(mys.size()>sze){
+             
+               sze=mys.size();
+               if(sze<=n)System.out.print(data+" ");
+               else continue;    
+           } 
+        }
+       
+        System.out.println("");
+        mys.clear();
+       
+        }
+        
+        
+    }}
