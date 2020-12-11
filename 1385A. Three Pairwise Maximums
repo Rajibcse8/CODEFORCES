@@ -1,0 +1,55 @@
+import static java.lang.Integer.min;
+import static java.lang.Integer.max;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+        
+        
+          int t=scan.nextInt();
+     while(t-->0){
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        int c=scan.nextInt();
+        
+        int m=max(a,max(b,c));
+       
+        if(m==b && m==c){
+              System.out.println("YES");
+            System.out.println(a+" "+a+" "+b   ); 
+            continue; 
+        }
+         
+        if(m==b && m==b && m==c){
+            System.out.println("YES");
+            System.out.println(a+" "+a+" "+a);
+            continue;
+        }
+        
+        if(m==a && m==c){
+            System.out.println("YES");
+            System.out.println(a+" "+b+" "+b);
+            continue;
+        }
+        if(m==a && m==b){
+              System.out.println("YES");
+            System.out.println(a+" "+c+" "+c); 
+            continue; 
+        }
+        
+        else System.out.println("NO");
+        
+    }
+        
+        
+    }}
+ 
+   
+   
