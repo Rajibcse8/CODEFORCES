@@ -1,0 +1,24 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+  
+        String a1= scan.next();
+        String a2=scan.next();
+        String a3=scan.next(); 
+        String a4=a1+a2;
+       
+        char[] s1=a4.toCharArray();
+        char[] s2=a3.toCharArray();
+        
+        Arrays.sort(s1);
+        Arrays.sort(s2);
+        
+        String ans1=String.valueOf(s1);
+        String ans2=String.valueOf(s2);        
+        System.out.println(ans1.compareTo(ans2)==0?"YES":"NO");
+ 
+    }}
