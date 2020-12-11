@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+   
+    public static void main(String[] args) {
+     
+        int n=scan.nextInt();
+        int sum=0;
+        while(n-->0){
+           
+            int a=scan.nextInt();
+            int b=scan.nextInt();
+            sum+=(a==b? 0:a>b?1:-1);
+        }
+        System.out.println(sum==0?"Friendship is magic!^^" : sum>0? "Mishka": "Chris");
+       
+    }}
