@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+  
+          int n=scan.nextInt();
+          while(n-->0){
+             int data=scan.nextInt();
+              System.out.println( (int) Math.ceil((double)data/(double)2)-1);
+          }
+          }}
