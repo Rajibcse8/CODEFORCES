@@ -1,0 +1,17 @@
+import java.util.Scanner;
+import java.util.Set;
+public class MyPractice {
+       
+    public static Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
+   
+    int k=scan.nextInt();
+    int n=scan.nextInt();
+    int w=scan.nextInt();
+    long sum=0;
+    for(int i=1;i<=w;i++){
+      int ans=i*k;
+      sum+=ans;
+    }
+    System.out.println(sum<=n? 0:sum-n ); 
+}}
