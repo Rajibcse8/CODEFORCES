@@ -1,0 +1,19 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+       
+    public static Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
+     
+        int n=scan.nextInt();
+        int count=0;
+        String s1="++X";
+        while(n-->0){
+          String ans=scan.next();
+          if(ans.contains("++"))count++;
+          if(ans.contains("--"))count--;
+          
+        }
+        System.out.println(count);      
+}}
