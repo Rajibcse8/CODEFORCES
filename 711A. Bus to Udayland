@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+   
+    public static void main(String[] args) {
+        
+     int n=scan.nextInt();
+     String[] arr=new String[n];
+     boolean flag=false;
+     for(int i=0;i<n;i++){
+       String ans=scan.next();
+       if(ans.contains("OO") && flag==false){
+           flag=true;
+          if(ans.compareTo("OO|OO")==0    ){arr[i]="++|OO";continue;}  
+          ans=ans.replace("OO", "++");
+          arr[i]=ans;
+          continue;
+       }
+       arr[i]=ans;
+     }
+     
+     if(flag==false)System.out.println("NO");
+     else{
+         System.out.println("YES");
+          for(int i=0;i<n;i++)System.out.println(arr[i]);
+     }
+        
+}}
