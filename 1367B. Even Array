@@ -1,0 +1,44 @@
+/*
+..................
+******************
+*................*
+*.....RAJIB......* 
+*................* 
+******************
+..................
+*/
+
+
+import java.util.Set;
+import java.util.HashSet;
+import java.util.ArrayList;
+import static java.lang.Integer.min;
+import static java.lang.Integer.max;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Codeforces {
+ 
+   
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+      
+      int t=scan.nextInt();
+      while(t-->0){  
+      int n=scan.nextInt();
+      int remev=0,remodd=0;      
+      for(int i=0;i<n;i++){
+         int data=scan.nextInt();
+         if(i%2==0  && data %2==1 )remev++;
+         if(i%2==1 && data%2==0)remodd++;
+      }
+      
+        System.out.println(remev==remodd? remev: -1  );
+      }
+      
+      
+    }}
