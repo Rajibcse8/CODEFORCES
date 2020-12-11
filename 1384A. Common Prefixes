@@ -1,0 +1,71 @@
+/*
+..................
+******************
+*................*
+*.....RAJIB......* 
+*................* 
+******************
+..................
+*/
+
+
+import java.util.Set;
+import java.util.HashSet;
+import java.util.ArrayList;
+import static java.lang.Integer.min;
+import static java.lang.Integer.max;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Codeforces {
+    
+    
+    static StringBuffer solve(StringBuffer ans,int data){
+    
+      return null;
+    }
+    
+  
+    
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+      
+      int t=scan.nextInt();
+      while(t-->0){
+     
+        int n=scan.nextInt();
+        String ans="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+        StringBuffer ans1= new StringBuffer(ans);
+        
+        for(int i=0;i<n;i++){
+          int d=scan.nextInt();
+          
+           if(i==0){System.out.println(ans1);}
+           
+             char c=ans1.charAt(d);
+             if(c=='z'){
+             c='a';
+             ans1.setCharAt(d, c);
+             System.out.println(ans1);
+             continue;
+           }
+           
+          if(c>='a' && c<='y'){
+            
+              c=(char)( (int) c+ 1   );
+              ans1.setCharAt(d, c);
+              System.out.println(ans1);
+              continue;
+           }
+         
+          
+        
+        }}
+         
+        
+        
+    }}
