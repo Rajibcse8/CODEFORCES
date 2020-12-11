@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+   
+    public static void main(String[] args) {
+        
+        int t=scan.nextInt();
+        while(t-->0){
+        int x=scan.nextInt();
+        int y=scan.nextInt();
+        int n=scan.nextInt();
+        int mod=n%x;
+        if(mod==y)System.out.println(n);
+        else{
+            if(mod>y)System.out.println( n- (mod-y)   );
+            
+            else System.out.println    (  n- ( mod+(x-y))  );
+        } 
+    }
+
+}}
+ 
