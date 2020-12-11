@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+       
+        int n=scan.nextInt();
+        int k=scan.nextInt();
+        k=240-k;
+        int sum=0;
+        int cnt=0;
+        for(int i=1;i<=n;i++)
+        {
+            sum+=(i*5);
+            if(sum<=k)cnt++;
+        }
+        System.out.println(cnt);
+    }}
