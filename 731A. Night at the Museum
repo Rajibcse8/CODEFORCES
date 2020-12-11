@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+     
+        String s=scan.next();
+        char piv='a';
+        int ans=0;
+        for(int i=0;i<s.length();i++){
+            
+            int a=Math.abs(s.charAt(i)- piv );
+            a=(a>=13? 26-a: a);
+            piv=s.charAt(i);
+           ans+=a;
+        }
+        System.out.println(ans);        
+    }}
+ 
