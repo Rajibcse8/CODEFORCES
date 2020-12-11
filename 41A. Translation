@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class MyPractice {
+
+    public static Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
+ 
+       String s1=scan.next();
+       String s2=scan.next();
+       StringBuffer ans=new StringBuffer(s2);
+       ans=ans.reverse();
+       String s3=ans.toString();
+       
+        System.out.println(s1.compareTo(s3)==0? "YES":"NO");
+    }}
