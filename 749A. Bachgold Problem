@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+   
+        int t=scan.nextInt();
+     
+        int rem=t/2;
+        System.out.println(rem);
+        for(int i=1;i<=rem;i++){
+         
+            if(i==1){System.out.print(t%2==1?3+" " :2+" " );continue;}
+            System.out.print(2+" ");
+    }
+        System.out.println();   
+          
+}}
