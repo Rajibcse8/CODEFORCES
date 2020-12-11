@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main {
+         
+      static boolean checkvow(char ch){
+        boolean flag=false;
+        if(ch=='a'|| ch=='e'|| ch=='i'||ch=='o'||ch=='u')return true;
+        if(ch!='a'|| ch!='e'|| ch!='i'||ch!='o'||ch!='u')return false;
+                
+        return flag;  
+    }
+       
+    static public Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
+        
+        String s1,s2;
+        s1=scan.next();
+        s2=scan.next();
+        
+        if(s1.length()==s2.length()){
+         boolean flag=true;
+         for(int i=0;i<s1.length();i++){
+                 
+            boolean ans1=checkvow(s1.charAt(i));
+            boolean ans2=checkvow(s2.charAt(i));
+           if(ans1==ans2)continue;
+           else{
+              flag=false;
+              break;
+           }
+         
+         }    
+            System.out.println(flag==true? "Yes":"No");       
+        }
+        
+        else System.out.println("No");    
+    }}
