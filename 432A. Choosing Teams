@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+   
+    public static void main(String[] args) {
+     
+      int n=scan.nextInt();
+      int k=scan.nextInt();
+      int count=0;
+       for(int i=0 ;i<n;i++){
+           int data=scan.nextInt();
+           count+=( data+k<=5? 1:0);
+       }
+        System.out.println(count/3);
+    }}
