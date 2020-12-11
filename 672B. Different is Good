@@ -1,0 +1,23 @@
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+        
+        int n=scan.nextInt();
+        String s=scan.next();
+        Set<Character>mys=new HashSet<>();
+       
+       for(int i=0;i<s.length();i++){
+          mys.add(s.charAt(i));
+       }        
+    
+       int charleft=26-mys.size();
+       int totalchar=n-mys.size();
+       
+        System.out.println(totalchar<=charleft? totalchar:-1 );
+    }}
