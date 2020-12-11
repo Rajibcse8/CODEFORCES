@@ -1,0 +1,23 @@
+import static java.lang.Double.min;
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    
+
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+       
+       int n=scan.nextInt();
+       int toapp=scan.nextInt();
+       double mini=100000.00;
+       
+       for(int i=0;i<n;i++){
+           double a=scan.nextDouble();
+           double b=scan.nextDouble();
+          double cost=a/b;
+          mini=min(mini,cost);
+         //  System.out.println(mini);
+         }
+        System.out.println(mini*(double)toapp);
+    }}
