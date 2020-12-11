@@ -1,0 +1,51 @@
+/*
+..................
+******************
+*................*
+*.....RAJIB......* 
+*................* 
+******************
+..................
+*/
+
+
+import java.util.Set;
+import java.util.HashSet;
+import java.util.ArrayList;
+import static java.lang.Integer.min;
+import static java.lang.Integer.max;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Codeforces {
+
+
+ public static int srch(int value, int[]  arr){
+       int ans=0;
+      for(int i=0;i<arr.length;i++){
+         if(arr[i]==value)return (i+1);
+         else continue;
+      }
+  
+      return ans;
+ }    
+   
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+      
+      int n=scan.nextInt();
+      int[] arr=new int[n];
+      for(int i=0;i<n;i++)arr[i]=scan.nextInt();
+      
+      for(int i=1;i<=n;i++){
+      
+          int index=srch(i,arr);
+          System.out.print(index+" ");
+      }
+        System.out.println("");    
+        
+    }}
