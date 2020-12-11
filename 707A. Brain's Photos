@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+       
+        int n=scan.nextInt();
+        int m=scan.nextInt();
+        boolean flag=false;
+         for(int i=0;i<n;i++)
+             for(int j=0;j<m;j++){
+                char ch = scan.next().charAt(0);
+                if(ch=='C'||ch=='M'||ch=='Y'){flag=true;continue;}
+             }
+         
+         System.out.println(flag==true? "#Color" :"#Black&White");
+
+    }}
