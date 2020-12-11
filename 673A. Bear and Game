@@ -1,0 +1,48 @@
+ 
+/*
+..................
+******************
+*................*
+*.....RAJIB......* 
+*................* 
+******************
+..................
+*/
+
+
+import java.util.Set;
+import java.util.HashSet;
+import java.util.ArrayList;
+import static java.lang.Integer.min;
+import static java.lang.Integer.max;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Deque;
+import java.util.List;
+import java.util.Scanner;
+import java.lang.*;
+
+
+public class Codeforces {
+    
+    
+
+   
+
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+      
+       int n=scan.nextInt();
+       int []arr=new int[n];
+       
+       for(int i=0;i<n;i++ ) arr[i]=scan.nextInt();
+       int in=0;
+       for(int i=0;i<n;i++){
+           int ans=arr[i]-in;
+           if(ans>15){System.out.println(in+15);return;}
+           else in=arr[i];
+       }
+        System.out.println(in+15>90? "90": in+15);
+  
+    }}
