@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+       
+        String s=scan.next();
+        boolean flag=false;
+       
+        for(int i=1;i<=5;i++){
+               String ans=scan.next();
+               if( s.charAt(0)==ans.charAt(0)  || s.charAt(1)==ans.charAt(1)   )flag=true;
+           
+        }
+        System.out.println(flag==true? "YES" :"NO");
+          
+    }}
+ 
