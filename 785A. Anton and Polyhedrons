@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+  
+      
+        int n=scan.nextInt();
+        int sum=0;
+       while(n-->0){
+           
+        String a=scan.next();     
+         sum+=( a.compareTo("Tetrahedron")==0? 4 :a.compareTo("Cube")==0? 6:a.compareTo("Octahedron")==0?8:a.compareTo("Dodecahedron")==0?12:a.compareTo("Icosahedron")==0?20:0); 
+      }  
+        System.out.println(sum);  
+
+    }}
