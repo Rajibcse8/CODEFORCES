@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+          int n=scan.nextInt();
+        while(n-->0){
+        
+            int a=scan.nextInt();
+            int b=scan.nextInt();
+            System.out.println(a%b==0? 0:  a<=b?  b-a:  b-(a%b) );
+        }
+    }}
