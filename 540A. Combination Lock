@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+
+public class Codeforces {
+ 
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+       
+        
+        int n=scan.nextInt();
+        String s1=scan.next();
+        String s2=scan.next();
+        
+        int ans=0;
+        
+        for(int i=0;i<n;i++){
+        
+          int value=Math.abs   ( s1.charAt(i)-s2.charAt(i) )  ;
+           value=(value>=5? 10-value: value );
+           ans+=value;
+        }
+        System.out.println(ans); 
+      
+    }}
+ 
