@@ -1,0 +1,22 @@
+import java.util.Set;
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+      Set<Integer>m=new HashSet<>(); 
+      int a=scan.nextInt();
+      m.add(a);
+      int b=scan.nextInt();
+      m.add(b);
+      int c=scan.nextInt();
+      m.add(c);
+      int d=scan.nextInt();
+      m.add(d);
+      int l=m.size();
+      m.clear();
+      System.out.println(4-l);
+      
+    }}
