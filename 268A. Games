@@ -1,0 +1,27 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Codeforces {
+    
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+          int n=scan.nextInt();
+          
+          int[] ho=new int[n];
+          int[] aw=new int[n];
+          
+          for(int i=0;i<n;i++){
+            ho[i]=scan.nextInt();
+            aw[i]=scan.nextInt();
+          }
+          int cnt=0;
+          for(int i=0;i<n;i++){
+              
+              for(int j=0;j<n;j++){
+                   if(ho[i]==aw[j])cnt++;
+              }
+          }
+          
+          System.out.println(cnt);
+    
+    }}
